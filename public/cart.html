@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix and Buy Smartphone - Giỏ hàng</title>
+  <meta name="description" content="Fix and Buy Smartphone cung cấp điện thoại, phụ kiện, linh kiện và dịch vụ sửa chữa với đặt hàng nhanh và thanh toán rõ ràng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+</head>
+<body class="" data-page="cart">
+  <div class="topbar">
+    <div class="container inner">
+      <div class="info-strip">
+        <span class="pill">Giao hàng toàn quốc 2H - 48H</span>
+        <span class="pill">Sửa chữa minh bạch - báo giá trước</span>
+        <span class="pill">Tiền mặt / chuyển khoản / QR</span>
+      </div>
+      <div class="hotline">Hotline: 0396 351 501 • Fix and Buy Smartphone</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">FB</span>
+        <span>
+          Fix and Buy Smartphone
+          <small>Bán máy đẹp • Linh kiện chuẩn • Giao hàng toàn quốc</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/" data-nav="home">Trang chủ</a>
+        <a href="/catalog.html" data-nav="catalog">Điện thoại & linh kiện</a>
+        <a href="/booking.html" data-nav="booking">Đặt lịch sửa</a>
+        <a href="/tracking.html" data-nav="tracking">Tra cứu đơn / phiếu sửa</a>
+        <a href="/admin-login.html" data-nav="admin">Admin</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="/cart.html" title="Giỏ hàng"><span>Giỏ hàng</span><span class="badge-count" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Giỏ hàng của bạn</span>
+        <h2>Sẵn sàng cho bước thanh toán</h2>
+      </div>
+      <a class="btn btn-secondary" href="/catalog.html">Tiếp tục mua sắm</a>
+    </div>
+
+    <div class="cart-layout">
+      <section id="cartItems"></section>
+
+      <aside class="summary-box">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">Tóm tắt đơn</span>
+            <h2>Thông tin thanh toán</h2>
+          </div>
+        </div>
+        <div class="summary-list" id="cartSummary"></div>
+        <div class="spacer"></div>
+        <a class="btn btn-primary w-full" href="/checkout.html">Tiến hành checkout</a>
+      </aside>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fix and Buy Smartphone</strong>
+        <div class="muted mt-8">Website bán điện thoại và sửa chữa với giao diện hiện đại, hỗ trợ đặt hàng, đánh giá sao và khu quản trị riêng.</div>
+      </div>
+      <div class="muted">© 2026 Fix and Buy Smartphone • Đặt hàng nhanh • Thanh toán rõ ràng • Hỗ trợ trực tuyến.</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

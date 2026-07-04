@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" rx="48" fill="#ffffff"/>
+<rect x="32" y="32" width="448" height="448" rx="24" fill="#F8FBFF" stroke="#D9E7FF" stroke-width="12"/>
+<rect x="76" y="76" width="112" height="112" rx="12" fill="#0F172A"/>
+<rect x="98" y="98" width="68" height="68" rx="8" fill="#ffffff"/>
+<rect x="110" y="110" width="44" height="44" rx="6" fill="#0F172A"/>
+<rect x="324" y="76" width="112" height="112" rx="12" fill="#0F172A"/>
+<rect x="346" y="98" width="68" height="68" rx="8" fill="#ffffff"/>
+<rect x="358" y="110" width="44" height="44" rx="6" fill="#0F172A"/>
+<rect x="76" y="324" width="112" height="112" rx="12" fill="#0F172A"/>
+<rect x="98" y="346" width="68" height="68" rx="8" fill="#ffffff"/>
+<rect x="110" y="358" width="44" height="44" rx="6" fill="#0F172A"/>
+<rect x="238" y="78" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="274" y="78" width="22" height="58" rx="4" fill="#0F172A"/>
+<rect x="238" y="114" width="58" height="22" rx="4" fill="#0F172A"/>
+<rect x="238" y="160" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="274" y="160" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="238" y="214" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="274" y="214" width="58" height="22" rx="4" fill="#0F172A"/>
+<rect x="346" y="214" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="382" y="214" width="58" height="22" rx="4" fill="#0F172A"/>
+<rect x="214" y="250" width="22" height="58" rx="4" fill="#0F172A"/>
+<rect x="250" y="250" width="58" height="22" rx="4" fill="#0F172A"/>
+<rect x="322" y="250" width="22" height="58" rx="4" fill="#0F172A"/>
+<rect x="358" y="250" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="394" y="250" width="22" height="58" rx="4" fill="#0F172A"/>
+<rect x="214" y="322" width="58" height="22" rx="4" fill="#0F172A"/>
+<rect x="286" y="322" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="322" y="322" width="94" height="22" rx="4" fill="#0F172A"/>
+<rect x="214" y="358" width="22" height="58" rx="4" fill="#0F172A"/>
+<rect x="250" y="358" width="58" height="22" rx="4" fill="#0F172A"/>
+<rect x="322" y="358" width="22" height="22" rx="4" fill="#0F172A"/>
+<rect x="358" y="358" width="58" height="58" rx="6" fill="#0F172A"/>
+<text x="256" y="470" text-anchor="middle" fill="#1D4ED8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">QR chuyển khoản</text>
+</svg>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix and Buy Smartphone - Đăng nhập Admin</title>
+  <meta name="description" content="Đăng nhập admin cửa hàng Fix and Buy Smartphone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body data-page="admin-login">
+  <div class="topbar">
+    <div class="container inner">
+      <div class="info-strip">
+        <span class="pill">Giao hàng toàn quốc 2H - 48H</span>
+        <span class="pill">Sửa chữa minh bạch - báo giá trước</span>
+        <span class="pill">Tiền mặt / chuyển khoản / QR</span>
+      </div>
+      <div class="hotline">Hotline: 0396 351 501 • Fix and Buy Smartphone</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">FB</span>
+        <span>
+          Fix and Buy Smartphone
+          <small>Bán máy đẹp • Linh kiện chuẩn • Giao hàng toàn quốc</small>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="/" data-nav="home">Trang chủ</a>
+        <a href="/catalog.html" data-nav="catalog">Điện thoại & linh kiện</a>
+        <a href="/booking.html" data-nav="booking">Đặt lịch sửa</a>
+        <a href="/tracking.html" data-nav="tracking">Tra cứu đơn / phiếu sửa</a>
+        <a href="/admin-login.html" data-nav="admin-login">Admin</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="icon-btn" href="/cart.html" title="Giỏ hàng"><span>Giỏ hàng</span><span class="badge-count" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <section class="admin-login admin-login-hero">
+        <div class="logo-line">
+          <span class="logo-mark">AD</span>
+          <div>
+            <strong style="font-size:1.2rem">Đăng nhập admin cửa hàng</strong>
+            <div class="muted mt-8">Trang quản trị riêng để theo dõi sản phẩm, đơn hàng, thanh toán, lịch sửa chữa và tin nhắn khách hàng.</div>
+          </div>
+        </div>
+
+        <div class="admin-login-benefits">
+          <div class="mini-stat"><strong>Dashboard đẹp</strong><span>KPI, biểu đồ doanh thu và việc cần xử lý</span></div>
+          <div class="mini-stat"><strong>Admin đơn</strong><span>Theo dõi đơn hàng, giao hàng và xác nhận thanh toán ngân hàng</span></div>
+          <div class="mini-stat"><strong>Đánh giá sao</strong><span>Duyệt nhanh đánh giá mới từ khách hàng</span></div>
+        </div>
+
+        <form id="adminLoginForm" class="grid-2 mt-20">
+          <input class="input" name="email" type="email" placeholder="Email admin" required />
+          <input class="input" name="password" type="password" placeholder="Mật khẩu admin" required />
+          <button class="btn btn-primary" type="submit">Đăng nhập quản trị</button>
+          <button class="btn btn-secondary" type="button" id="fillDemoAdminBtn">Dùng tài khoản quản trị</button>
+        </form>
+
+        <div class="login-help mt-16">
+          <div class="muted">Tài khoản mặc định đọc từ file <strong>.env</strong>.</div>
+          <div class="muted">Tài khoản quản trị: <strong>admin@fixbuy.vn</strong> / <strong>12345678</strong></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fix and Buy Smartphone</strong>
+        <div class="muted mt-8">Website bán điện thoại và sửa chữa với giao diện hiện đại, hỗ trợ đặt hàng, đánh giá sao và khu quản trị riêng.</div>
+      </div>
+      <div class="muted">© 2026 Fix and Buy Smartphone • Đặt hàng nhanh • Thanh toán rõ ràng • Hỗ trợ trực tuyến.</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+  <script src="/assets/js/admin.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

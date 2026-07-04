@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="920" viewBox="0 0 720 920">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0f766e"/>
+          <stop offset="100%" stop-color="#2dd4bf"/>
+        </linearGradient>
+        <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#111827"/>
+          <stop offset="50%" stop-color="#172554"/>
+          <stop offset="100%" stop-color="#0f172a"/>
+        </linearGradient>
+        <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="rgba(255,255,255,.82)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,.18)"/>
+        </linearGradient>
+        <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+      </defs>
+      <rect width="100%" height="100%" rx="48" fill="url(#bg)"/>
+      <circle cx="120" cy="120" r="110" fill="rgba(255,255,255,.18)" filter="url(#blur)"/>
+      <circle cx="620" cy="120" r="120" fill="rgba(255,255,255,.14)" filter="url(#blur)"/>
+      <circle cx="620" cy="780" r="160" fill="rgba(255,255,255,.12)" filter="url(#blur)"/>
+      <text x="58" y="86" font-size="34" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.8)" font-weight="700">Dịch vụ</text>
+      <text x="58" y="140" font-size="44" font-family="Inter,Segoe UI,Arial" fill="#fff" font-weight="800">Cài đặt - sao lưu - mở khóa </text>
+      <text x="58" y="180" font-size="24" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.75)">Repair Lab</text>
+      
+        <g transform="translate(360 390)">
+          <circle cx="0" cy="0" r="120" fill="rgba(255,255,255,.16)" stroke="rgba(255,255,255,.35)" stroke-width="4"/>
+          <path d="M -30 -110 l60 0 l-16 72 l62 20 l-60 108 l18 -76 l-70 -20 z" fill="#0f172a" opacity=".85"/>
+        </g>
+        
+      <rect x="58" y="770" width="604" height="94" rx="28" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.2)"/>
+      <text x="88" y="824" font-size="26" font-family="Inter,Segoe UI,Arial" fill="#fff" font-weight="700">Ảnh sản phẩm</text>
+      <text x="88" y="852" font-size="20" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.82)">Thiết kế mô phỏng cho giao diện bán hàng & sửa chữa</text>
+    </svg>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix and Buy Smartphone - Tra cứu đơn & sửa chữa</title>
+  <meta name="description" content="Fix and Buy Smartphone cung cấp điện thoại, phụ kiện, linh kiện và dịch vụ sửa chữa với đặt hàng nhanh và thanh toán rõ ràng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+</head>
+<body class="" data-page="tracking">
+  <div class="topbar">
+    <div class="container inner">
+      <div class="info-strip">
+        <span class="pill">Giao hàng toàn quốc 2H - 48H</span>
+        <span class="pill">Sửa chữa minh bạch - báo giá trước</span>
+        <span class="pill">Tiền mặt / chuyển khoản / QR</span>
+      </div>
+      <div class="hotline">Hotline: 0396 351 501 • Fix and Buy Smartphone</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">FB</span>
+        <span>
+          Fix and Buy Smartphone
+          <small>Bán máy đẹp • Linh kiện chuẩn • Giao hàng toàn quốc</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/" data-nav="home">Trang chủ</a>
+        <a href="/catalog.html" data-nav="catalog">Điện thoại & linh kiện</a>
+        <a href="/booking.html" data-nav="booking">Đặt lịch sửa</a>
+        <a href="/tracking.html" data-nav="tracking">Tra cứu đơn / phiếu sửa</a>
+        <a href="/admin-login.html" data-nav="admin">Admin</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="/cart.html" title="Giỏ hàng"><span>Giỏ hàng</span><span class="badge-count" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="section">
+  <div class="container">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Tra cứu đơn / phiếu sửa</span>
+          <h2>Xem nhanh trạng thái đơn hàng hoặc lịch sửa</h2>
+          <p>Bạn có thể tra cứu theo mã đơn, mã phiếu sửa hoặc email / số điện thoại đã đặt hàng. Với đơn chuyển khoản, màn hình cũng hiển thị lại nội dung chuyển khoản để đối chiếu nhanh.</p>
+        </div>
+      </div>
+
+      <div class="lookup-grid">
+        <input class="input" id="orderCodeInput" placeholder="Nhập mã đơn hàng, ví dụ: ORD-AB12CD" />
+        <button class="btn btn-primary" id="trackOrderBtn" type="button">Tra cứu đơn hàng</button>
+        <input class="input" id="bookingCodeInput" placeholder="Nhập mã phiếu sửa, ví dụ: BK-AB12CD" />
+        <button class="btn btn-soft" id="trackBookingBtn" type="button">Tra cứu phiếu sửa</button>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="lookup-grid">
+        <input class="input" id="lookupEmailInput" type="email" placeholder="Email đã mua hàng" />
+        <input class="input" id="lookupPhoneInput" placeholder="Số điện thoại đặt hàng" />
+        <button class="btn btn-secondary" id="lookupOrdersBtn" type="button">Xem lịch sử đơn hàng</button>
+        <div></div>
+      </div>
+
+      <div class="lookup-result" id="lookupResult"></div>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fix and Buy Smartphone</strong>
+        <div class="muted mt-8">Website bán điện thoại và sửa chữa với giao diện hiện đại, hỗ trợ đặt hàng, đánh giá sao và khu quản trị riêng.</div>
+      </div>
+      <div class="muted">© 2026 Fix and Buy Smartphone • Đặt hàng nhanh • Thanh toán rõ ràng • Hỗ trợ trực tuyến.</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

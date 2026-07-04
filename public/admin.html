@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix and Buy Smartphone - Quản trị cửa hàng</title>
+  <meta name="description" content="Quản trị sản phẩm, đơn hàng, sửa chữa, doanh thu và chat khách hàng của Fix and Buy Smartphone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body data-page="admin-dashboard">
+  <div class="topbar">
+    <div class="container inner">
+      <div class="info-strip">
+        <span class="pill">Giao hàng toàn quốc 2H - 48H</span>
+        <span class="pill">Sửa chữa minh bạch - báo giá trước</span>
+        <span class="pill">Tiền mặt / chuyển khoản / QR</span>
+      </div>
+      <div class="hotline">Hotline: 0396 351 501 • Fix and Buy Smartphone</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">FB</span>
+        <span>
+          Fix and Buy Smartphone
+          <small>Bán máy đẹp • Linh kiện chuẩn • Giao hàng toàn quốc</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/" data-nav="home">Trang chủ</a>
+        <a href="/catalog.html" data-nav="catalog">Điện thoại & linh kiện</a>
+        <a href="/booking.html" data-nav="booking">Đặt lịch sửa</a>
+        <a href="/tracking.html" data-nav="tracking">Tra cứu đơn / phiếu sửa</a>
+        <a href="/admin-login.html" data-nav="admin-dashboard">Admin</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="/cart.html" title="Giỏ hàng"><span>Giỏ hàng</span><span class="badge-count" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <section id="adminApp">
+        <div class="section-head admin-heading">
+          <div>
+            <span class="section-tag">Quản trị cửa hàng</span>
+            <h2>Tổng quan vận hành, doanh thu và chăm sóc khách hàng</h2>
+            <p>Theo dõi KPI, doanh thu, đơn chờ xử lý, thanh toán cần xác nhận, phiếu sửa, đánh giá và tin nhắn khách hàng trên cùng một màn hình.</p>
+          </div>
+          <div class="sub-actions">
+            <a class="btn btn-outline" href="/admin-login.html">Về trang đăng nhập</a>
+            <button class="btn btn-soft" id="exportDataBtn" type="button">Xuất JSON dữ liệu</button>
+            <button class="btn btn-secondary" id="resetDemoBtn" type="button">Đặt lại dữ liệu mẫu</button>
+            <button class="btn btn-danger" id="adminLogoutBtn" type="button">Đăng xuất</button>
+          </div>
+        </div>
+
+        <div class="kpis" id="adminStats"></div>
+        <div class="admin-highlights mt-20" id="adminHighlights"></div>
+        <div class="admin-analytics mt-20">
+          <section class="admin-chart-card">
+            <div class="section-head compact">
+              <div>
+                <span class="section-tag">Doanh thu 7 ngày</span>
+                <h2>Biểu đồ doanh thu theo ngày</h2>
+              </div>
+            </div>
+            <div class="revenue-chart" id="revenueChart"></div>
+          </section>
+          <section class="admin-chart-card">
+            <div class="section-head compact">
+              <div>
+                <span class="section-tag">Tỷ trọng danh mục</span>
+                <h2>Sản phẩm theo nhóm</h2>
+              </div>
+            </div>
+            <div class="mix-grid" id="inventoryMix"></div>
+          </section>
+        </div>
+
+        <div class="admin-layout mt-20">
+          <aside class="admin-sidebar">
+            <button class="tab active" data-tab="dashboard">Tổng quan</button>
+            <button class="tab" data-tab="products">Sản phẩm</button>
+            <button class="tab" data-tab="orders">Đơn hàng</button>
+            <button class="tab" data-tab="bookings">Phiếu sửa</button>
+            <button class="tab" data-tab="reviews">Đánh giá</button>
+            <button class="tab" data-tab="chats">Chat khách hàng</button>
+          </aside>
+
+          <section class="admin-main">
+            <div class="admin-card" data-pane="dashboard">
+              <div class="grid-2">
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead><tr><th colspan="4">Sản phẩm tồn kho thấp</th></tr></thead>
+                    <tbody id="lowStockBody"></tbody>
+                  </table>
+                </div>
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead><tr><th colspan="4">Đơn hàng mới nhất</th></tr></thead>
+                    <tbody id="latestOrdersBody"></tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="grid-2">
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead><tr><th colspan="4">Chuyển khoản chờ xác nhận</th></tr></thead>
+                    <tbody id="paymentPendingBody"></tbody>
+                  </table>
+                </div>
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead><tr><th colspan="4">Đánh giá mới nhất</th></tr></thead>
+                    <tbody id="latestReviewsBody"></tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead><tr><th colspan="5">Phiếu sửa mới nhất</th></tr></thead>
+                  <tbody id="latestBookingsBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-card hidden" data-pane="products">
+              <div class="section-head">
+                <div>
+                  <span class="section-tag">Quản lý sản phẩm</span>
+                  <h2>Thêm, sửa, xóa sản phẩm và quản lý hình ảnh</h2>
+                </div>
+                <button class="btn btn-primary" id="openProductModalBtn" type="button">+ Thêm sản phẩm</button>
+              </div>
+
+              <div class="admin-toolbar">
+                <input class="input" id="adminSearchInput" placeholder="Tìm tên, SKU, hãng..." />
+                <select class="select" id="adminTypeFilter">
+                  <option value="all">Tất cả loại</option>
+                  <option value="phone">Điện thoại</option>
+                  <option value="accessory">Phụ kiện / linh kiện</option>
+                  <option value="service">Dịch vụ</option>
+                </select>
+                <select class="select" id="adminBrandFilter">
+                  <option value="all">Tất cả hãng</option>
+                </select>
+                <button class="btn btn-secondary" type="button" id="adminProductFilterBtn">Lọc</button>
+                <button class="btn btn-outline" type="button" id="adminReloadProductsBtn">Tải lại</button>
+              </div>
+
+              <div class="spacer"></div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Sản phẩm</th>
+                      <th>SKU / Hãng</th>
+                      <th>Loại</th>
+                      <th>Giá</th>
+                      <th>Tồn</th>
+                      <th>Nổi bật</th>
+                      <th>Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminProductsBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-card hidden" data-pane="orders">
+              <div class="section-head">
+                <div>
+                  <span class="section-tag">Quản lý đơn hàng</span>
+                  <h2>Cập nhật trạng thái đơn và xác nhận thanh toán</h2>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Mã đơn</th>
+                      <th>Khách hàng</th>
+                      <th>Sản phẩm</th>
+                      <th>Tổng tiền</th>
+                      <th>Thanh toán</th>
+                      <th>Trạng thái</th>
+                      <th>Cập nhật</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminOrdersBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-card hidden" data-pane="bookings">
+              <div class="section-head">
+                <div>
+                  <span class="section-tag">Quản lý sửa chữa</span>
+                  <h2>Theo dõi lịch hẹn, ghi chú và tiến độ kỹ thuật</h2>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Mã phiếu</th>
+                      <th>Khách</th>
+                      <th>Thiết bị</th>
+                      <th>Lỗi</th>
+                      <th>Ngày hẹn</th>
+                      <th>Trạng thái</th>
+                      <th>Ghi chú</th>
+                      <th>Cập nhật</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminBookingsBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-card hidden" data-pane="reviews">
+              <div class="section-head">
+                <div>
+                  <span class="section-tag">Quản lý đánh giá</span>
+                  <h2>Duyệt hoặc ẩn đánh giá của khách hàng</h2>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Khách hàng</th>
+                      <th>Sản phẩm</th>
+                      <th>Số sao</th>
+                      <th>Nội dung</th>
+                      <th>Trạng thái</th>
+                      <th>Cập nhật</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminReviewsBody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-card hidden" data-pane="chats">
+              <div class="section-head">
+                <div>
+                  <span class="section-tag">Chat trực tuyến</span>
+                  <h2>Trả lời khách hàng từ website</h2>
+                </div>
+                <button class="btn btn-outline" type="button" id="reloadChatsBtn">Tải lại chat</button>
+              </div>
+              <div class="admin-chat-layout">
+                <aside class="admin-chat-list" id="adminChatList">
+                  <div class="empty-state"><h3>Chưa có hội thoại</h3></div>
+                </aside>
+                <section class="admin-chat-panel">
+                  <div class="admin-chat-head" id="adminChatHead">
+                    <strong>Chọn một hội thoại</strong>
+                    <span class="muted">Tin nhắn sẽ hiện tại đây</span>
+                  </div>
+                  <div class="admin-chat-messages" id="adminChatMessages"></div>
+                  <form class="admin-chat-form" id="adminChatForm">
+                    <textarea class="textarea" id="adminChatInput" placeholder="Nhập phản hồi cho khách..." required></textarea>
+                    <button class="btn btn-primary" type="submit">Gửi</button>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal" id="productModal">
+      <div class="modal-card">
+        <div class="modal-head">
+          <div>
+            <span class="section-tag">Thông tin sản phẩm</span>
+            <h2 id="productModalTitle">Thêm sản phẩm mới</h2>
+          </div>
+          <button class="btn btn-secondary" id="closeProductModalBtn" type="button">Đóng</button>
+        </div>
+
+        <form id="productForm" class="product-form-grid">
+          <input type="hidden" name="id" />
+          <input class="input" name="name" placeholder="Tên sản phẩm" required />
+          <input class="input" name="slug" placeholder="slug-nguoi-dung" required />
+          <input class="input" name="sku" placeholder="SKU" required />
+          <select class="select" name="type" required>
+            <option value="phone">Điện thoại</option>
+            <option value="accessory">Phụ kiện / linh kiện</option>
+            <option value="service">Dịch vụ</option>
+          </select>
+          <input class="input" name="brand" placeholder="Hãng / nhà cung cấp" required />
+          <input class="input" name="category" placeholder="Danh mục" required />
+          <input class="input" name="tier" placeholder="tier: flagship / midrange / accessory / service..." />
+          <input class="input" name="colorLabel" placeholder="Màu hiển thị" />
+          <input class="input" name="price" type="number" min="0" placeholder="Giá bán" required />
+          <input class="input" name="comparePrice" type="number" min="0" placeholder="Giá gốc" />
+          <input class="input" name="stock" type="number" min="0" placeholder="Tồn kho" required />
+          <textarea class="textarea full" name="images" placeholder="Mỗi dòng một URL ảnh, ví dụ: /assets/products/iphone-16.svg"></textarea>
+          <div class="full image-upload-box">
+            <label class="section-tag" for="productImageFiles">Tải ảnh sản phẩm lên</label>
+            <input class="input" id="productImageFiles" name="imageFiles" type="file" accept="image/*" multiple />
+            <div class="muted mt-8">Có thể chọn nhiều ảnh. Ảnh sẽ được lưu vào thư mục uploads và tự thêm vào gallery sản phẩm.</div>
+            <div class="image-preview-grid mt-12" id="productImagePreview"></div>
+          </div>
+          <textarea class="textarea full" name="shortDescription" placeholder="Mô tả ngắn"></textarea>
+          <textarea class="textarea full" name="description" placeholder="Mô tả chi tiết"></textarea>
+          <textarea class="textarea full" name="tags" placeholder="Tag cách nhau bằng dấu phẩy, ví dụ: Apple, flagship, trả góp"></textarea>
+          <textarea class="textarea full" name="specs" placeholder='Thông số dạng JSON, ví dụ: {"RAM":"8GB","Bộ nhớ":"256GB"}'></textarea>
+
+          <label class="checkbox"><input type="checkbox" name="featured" /> Sản phẩm nổi bật</label>
+          <label class="checkbox"><input type="checkbox" name="bestseller" /> Bán chạy</label>
+
+          <button class="btn btn-primary" type="submit">Lưu sản phẩm</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fix and Buy Smartphone</strong>
+        <div class="muted mt-8">Hệ thống quản trị điện thoại, phụ kiện, sửa chữa, đơn hàng và chăm sóc khách hàng.</div>
+      </div>
+      <div class="muted">© 2026 Fix and Buy Smartphone • Quản lý sản phẩm • Doanh thu • Chat khách hàng.</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/admin.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

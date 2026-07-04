@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="920" viewBox="0 0 720 920">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#059669"/>
+          <stop offset="100%" stop-color="#34d399"/>
+        </linearGradient>
+        <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#111827"/>
+          <stop offset="50%" stop-color="#172554"/>
+          <stop offset="100%" stop-color="#0f172a"/>
+        </linearGradient>
+        <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="rgba(255,255,255,.82)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,.18)"/>
+        </linearGradient>
+        <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+      </defs>
+      <rect width="100%" height="100%" rx="48" fill="url(#bg)"/>
+      <circle cx="120" cy="120" r="110" fill="rgba(255,255,255,.18)" filter="url(#blur)"/>
+      <circle cx="620" cy="120" r="120" fill="rgba(255,255,255,.14)" filter="url(#blur)"/>
+      <circle cx="620" cy="780" r="160" fill="rgba(255,255,255,.12)" filter="url(#blur)"/>
+      <text x="58" y="86" font-size="34" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.8)" font-weight="700">ASUS</text>
+      <text x="58" y="140" font-size="44" font-family="Inter,Segoe UI,Arial" fill="#fff" font-weight="800">ROG Phone 8 Pro</text>
+      <text x="58" y="180" font-size="24" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.75)">Phantom Black</text>
+      
+        <rect x="398" y="150" rx="48" ry="48" width="230" height="480" fill="url(#glass)" stroke="rgba(255,255,255,.55)" stroke-width="4"/>
+        <rect x="422" y="184" rx="34" ry="34" width="182" height="154" fill="rgba(255,255,255,.18)"/>
+        <circle cx="108" cy="118" r="26" fill="#0f172a" opacity=".95"/><circle cx="108" cy="118" r="12" fill="#1d4ed8" opacity=".6"/><circle cx="172" cy="118" r="26" fill="#0f172a" opacity=".95"/><circle cx="172" cy="118" r="12" fill="#1d4ed8" opacity=".6"/><circle cx="108" cy="182" r="26" fill="#0f172a" opacity=".95"/><circle cx="108" cy="182" r="12" fill="#1d4ed8" opacity=".6"/>
+        <circle cx="575" cy="392" r="12" fill="rgba(255,255,255,.35)"/>
+        <rect x="98" y="188" rx="40" ry="40" width="215" height="440" fill="#0b1220" stroke="rgba(255,255,255,.25)" stroke-width="4"/>
+        <rect x="115" y="206" rx="28" ry="28" width="181" height="404" fill="url(#screen)" />
+        <rect x="172" y="216" rx="12" ry="12" width="66" height="14" fill="rgba(255,255,255,.22)" />
+        
+      <rect x="58" y="770" width="604" height="94" rx="28" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.2)"/>
+      <text x="88" y="824" font-size="26" font-family="Inter,Segoe UI,Arial" fill="#fff" font-weight="700">Ảnh sản phẩm</text>
+      <text x="88" y="852" font-size="20" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.82)">Thiết kế mô phỏng cho giao diện bán hàng & sửa chữa</text>
+    </svg>

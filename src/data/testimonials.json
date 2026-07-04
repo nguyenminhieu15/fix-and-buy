@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ngọc Bích",
+    "role": "Khách thay màn hình iPhone 15 Pro",
+    "rating": 5,
+    "comment": "Báo giá rõ trước khi sửa, ký tên linh kiện và giao máy đúng hẹn. Mình thích nhất là phần theo dõi đơn và trạng thái sửa rất dễ nhìn."
+  },
+  {
+    "name": "Hoàng Sơn",
+    "role": "Khách mua Galaxy S24 Ultra",
+    "rating": 5,
+    "comment": "Web chạy mượt, lọc máy nhanh, thêm phụ kiện vào giỏ rất tiện. Trang thanh toán có địa chỉ giao hàng rõ ràng và xác nhận thanh toán gọn."
+  },
+  {
+    "name": "Khánh Linh",
+    "role": "Khách thay pin Samsung A55",
+    "rating": 5,
+    "comment": "Nhân viên tư vấn nhiệt tình, kiểm tra pin cũ miễn phí rồi mới thay. Có lịch sử đơn hàng và gọi hỗ trợ khá nhanh."
+  },
+  {
+    "name": "Tuấn Kiệt",
+    "role": "Khách mua phụ kiện & linh kiện",
+    "rating": 4.8,
+    "comment": "Mình đặt cáp, sạc GaN và ốp lưng cùng lúc. Admin quản lý kho tốt nên không gặp tình trạng hết hàng ảo."
+  }
+]

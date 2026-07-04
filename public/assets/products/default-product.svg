@@ -1,0 +1,12 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" rx="40" fill="#F8FAFC"/>
+  <rect x="90" y="90" width="720" height="720" rx="28" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4"/>
+  <rect x="320" y="160" width="260" height="500" rx="42" fill="#0F172A"/>
+  <rect x="340" y="190" width="220" height="420" rx="28" fill="#EFF6FF"/>
+  <circle cx="450" cy="635" r="16" fill="#CBD5E1"/>
+  <rect x="375" y="250" width="150" height="20" rx="10" fill="#2563EB"/>
+  <rect x="355" y="290" width="190" height="14" rx="7" fill="#CBD5E1"/>
+  <rect x="370" y="326" width="160" height="14" rx="7" fill="#CBD5E1"/>
+  <text x="450" y="740" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800" fill="#0F172A">Fix and Buy Smartphone</text>
+  <text x="450" y="786" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#64748B">Ảnh sản phẩm</text>
+</svg>

@@ -1,0 +1,94 @@
+# Mapping ảnh JPG đã thay
+
+
+Ảnh trong file RAR đã được dùng làm ảnh tượng trưng cho danh mục sản phẩm. Ảnh upload trong admin vẫn được ưu tiên nếu sản phẩm có ảnh upload riêng.
+
+- `12-pro-plus-5g.jpg` <- `iphone 16.jpg`
+- `a79-5g.jpg` <- `xiaomi.jpg`
+- `bao-da-xiaomi-14-ultra.jpg` <- `ví da.jpg`
+- `bao-ve-camera-galaxy-s24-ultra.jpg` <- `samsung s26.jpg`
+- `bo-tua-vit-sua-dien-thoai-52-dau.jpg` <- `thay-man-hinh-iphone.jpg`
+- `bo-ve-sinh-dien-thoai-20-mon.jpg` <- `thay-man-hinh-iphone.jpg`
+- `c67.jpg` <- `xiaomi.jpg`
+- `cai-dat-sao-luu-mo-khoa-phan-mem.jpg` <- `thay-man-hinh-iphone.jpg`
+- `cam-bien-face-id-iphone-15.jpg` <- `chân sạc ip.jpg`
+- `camon-30-pro.jpg` <- `xiaomi.jpg`
+- `cap-sac-chan-type-c-thay-the.jpg` <- `chân sạc ip.jpg`
+- `cap-usb-c-to-lightning-1m.jpg` <- `dây sạc.jpg`
+- `cap-usb-c-to-usb-c-100w-1m.jpg` <- `dây sạc.jpg`
+- `cu-sac-gan-65w-3-cong.jpg` <- `sạc gaN.jpg`
+- `cu-sac-nhanh-45w-usb-c.jpg` <- `sạc gaN.jpg`
+- `cum-camera-sau-redmi-note-13-pro-plus.jpg` <- `xiaomi.jpg`
+- `default-product.jpg` <- `iphone 16.jpg`
+- `dock-sac-3-trong-1-tu-tinh.jpg` <- `sạc gaN.jpg`
+- `ep-kinh-giu-man-zin.jpg` <- `thay-man-hinh-iphone.jpg`
+- `find-n3-flip.jpg` <- `xiaomi.jpg`
+- `find-x8.jpg` <- `xiaomi.jpg`
+- `galaxy-a35-5g.jpg` <- `samsung s26.jpg`
+- `galaxy-a55-5g.jpg` <- `samsung s26.jpg`
+- `galaxy-s23-fe.jpg` <- `samsung s26.jpg`
+- `galaxy-s24-plus.jpg` <- `samsung s26.jpg`
+- `galaxy-s24-ultra.jpg` <- `samsung s26.jpg`
+- `galaxy-s24.jpg` <- `samsung s26.jpg`
+- `galaxy-z-flip6.jpg` <- `samsung s26.jpg`
+- `galaxy-z-fold6.jpg` <- `samsung s26.jpg`
+- `gia-do-dien-thoai-gap-de-ban.jpg` <- `iphone 16.jpg`
+- `gt-6.jpg` <- `xiaomi.jpg`
+- `iphone-13.jpg` <- `iphone 13.jpg`
+- `iphone-14-plus.jpg` <- `iphone 16.jpg`
+- `iphone-15-plus.jpg` <- `iphone 16.jpg`
+- `iphone-15-pro-max.jpg` <- `iphone 16.jpg`
+- `iphone-15-pro.jpg` <- `iphone 16.jpg`
+- `iphone-15.jpg` <- `iphone 16.jpg`
+- `iphone-16-plus.jpg` <- `iphone 16.jpg`
+- `iphone-16-pro-max.jpg` <- `iphone 16.jpg`
+- `iphone-16-pro.jpg` <- `iphone 16.jpg`
+- `iphone-16.jpg` <- `iphone 16.jpg`
+- `khay-sim-galaxy-s24-chinh-hang.jpg` <- `chân sạc ip.jpg`
+- `kinh-cuong-luc-ceramic-iphone-16-pro.jpg` <- `thay-man-hinh-iphone.jpg`
+- `kinh-lung-iphone-15-pro-max.jpg` <- `thay-man-hinh-iphone.jpg`
+- `loa-ngoai-iphone-14-plus.jpg` <- `chân sạc ip.jpg`
+- `magic6-pro.jpg` <- `honor.jpg`
+- `man-hinh-oled-iphone-13-zin-ep-kinh.jpg` <- `thay-man-hinh-iphone.jpg`
+- `nord-4.jpg` <- `honor.jpg`
+- `note-40-pro-plus-5g.jpg` <- `xiaomi.jpg`
+- `note-50.jpg` <- `xiaomi.jpg`
+- `nova-12i.jpg` <- `huawei.jpg`
+- `oneplus-12.jpg` <- `honor.jpg`
+- `op-lung-chong-soc-galaxy-s24-ultra.jpg` <- `ví da.jpg`
+- `op-lung-magsafe-iphone-16-pro-max.jpg` <- `ví da.jpg`
+- `phone-2.jpg` <- `xiaomi.jpg`
+- `phone-2a.jpg` <- `xiaomi.jpg`
+- `pin-du-phong-20-000mah-22-5w.jpg` <- `sạc dự phòng.jpg`
+- `pin-dung-luong-chuan-galaxy-a55.jpg` <- `thay pin iphone.jpg`
+- `pixel-8a.jpg` <- `google pixel.jpg`
+- `pixel-9-pro-xl.jpg` <- `google pixel.jpg`
+- `pixel-9.jpg` <- `google pixel.jpg`
+- `poco-f6.jpg` <- `xiaomi.jpg`
+- `poco-x6-pro.jpg` <- `xiaomi.jpg`
+- `pura-70-pro.jpg` <- `huawei.jpg`
+- `quat-tan-nhiet-dien-thoai.jpg` <- `quạt tản nhiệt.jpg`
+- `redmi-note-13-pro-plus-5g.jpg` <- `xiaomi.jpg`
+- `redmi-note-14-pro-5g.jpg` <- `xiaomi.jpg`
+- `reno11-f-5g.jpg` <- `xiaomi.jpg`
+- `reno12-pro-5g.jpg` <- `xiaomi.jpg`
+- `rog-phone-8-pro.jpg` <- `asus.jpg`
+- `sac-khong-day-50w.jpg` <- `sạc gaN.jpg`
+- `sac-khong-day-tu-tinh-15w.jpg` <- `sạc gaN.jpg`
+- `sac-xe-hoi-65w-2-cong.jpg` <- `sạc gaN.jpg`
+- `sua-camera-truoc-sau.jpg` <- `thay-man-hinh-iphone.jpg`
+- `sua-chan-sac-mic-loa.jpg` <- `chân sạc ip.jpg`
+- `tai-nghe-bluetooth-tune-flex.jpg` <- `tai nghe.jpg`
+- `thay-man-hinh-oled-cao-cap.jpg` <- `thay-man-hinh-iphone.jpg`
+- `thay-nap-lung-khung-vien.jpg` <- `thay-man-hinh-iphone.jpg`
+- `thay-pin-dung-luong-chuan.jpg` <- `thay pin iphone.jpg`
+- `v30e.jpg` <- `iphone 16.jpg`
+- `v40-5g.jpg` <- `iphone 16.jpg`
+- `vi-da-magsafe.jpg` <- `ví da.jpg`
+- `x100-pro.jpg` <- `iphone 16.jpg`
+- `x9b.jpg` <- `honor.jpg`
+- `xiaomi-14-ultra.jpg` <- `xiaomi.jpg`
+- `xiaomi-14.jpg` <- `xiaomi.jpg`
+- `xu-ly-vao-nuoc-ve-sinh-main.jpg` <- `thay-man-hinh-iphone.jpg`
+- `y100-5g.jpg` <- `iphone 16.jpg`
+- `zenfone-11-ultra.jpg` <- `asus.jpg`

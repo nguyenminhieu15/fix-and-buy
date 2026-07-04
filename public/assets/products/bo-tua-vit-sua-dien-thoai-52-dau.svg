@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="920" viewBox="0 0 720 920">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#6d28d9"/>
+          <stop offset="100%" stop-color="#c4b5fd"/>
+        </linearGradient>
+        <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#111827"/>
+          <stop offset="50%" stop-color="#172554"/>
+          <stop offset="100%" stop-color="#0f172a"/>
+        </linearGradient>
+        <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="rgba(255,255,255,.82)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,.18)"/>
+        </linearGradient>
+        <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+      </defs>
+      <rect width="100%" height="100%" rx="48" fill="url(#bg)"/>
+      <circle cx="120" cy="120" r="110" fill="rgba(255,255,255,.18)" filter="url(#blur)"/>
+      <circle cx="620" cy="120" r="120" fill="rgba(255,255,255,.14)" filter="url(#blur)"/>
+      <circle cx="620" cy="780" r="160" fill="rgba(255,255,255,.12)" filter="url(#blur)"/>
+      <text x="58" y="86" font-size="34" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.8)" font-weight="700">Jakemy</text>
+      <text x="58" y="140" font-size="44" font-family="Inter,Segoe UI,Arial" fill="#fff" font-weight="800">Bộ tua vít sửa điện thoại 52</text>
+      <text x="58" y="180" font-size="24" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.75)">Accessory Series</text>
+      
+        <g transform="translate(360 360)">
+          <rect x="-135" y="-120" width="270" height="220" rx="44" fill="rgba(255,255,255,.14)" stroke="rgba(255,255,255,.35)" stroke-width="4"/>
+          <path d="M -60 -40 h120 a42 42 0 0 1 42 42 v38 a42 42 0 0 1 -42 42 h-120 a42 42 0 0 1 -42 -42 v-38 a42 42 0 0 1 42 -42 z" fill="#0f172a" opacity=".88"/>
+          <circle cx="0" cy="20" r="28" fill="rgba(255,255,255,.35)"/>
+          <rect x="-16" y="-100" width="32" height="62" rx="16" fill="rgba(255,255,255,.26)"/>
+        </g>
+        
+      <rect x="58" y="770" width="604" height="94" rx="28" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.2)"/>
+      <text x="88" y="824" font-size="26" font-family="Inter,Segoe UI,Arial" fill="#fff" font-weight="700">Ảnh sản phẩm</text>
+      <text x="88" y="852" font-size="20" font-family="Inter,Segoe UI,Arial" fill="rgba(255,255,255,.82)">Thiết kế mô phỏng cho giao diện bán hàng & sửa chữa</text>
+    </svg>

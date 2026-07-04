@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix and Buy Smartphone - Thanh toán & giao hàng</title>
+  <meta name="description" content="Xác nhận thông tin giao hàng và chọn thanh toán tiền mặt hoặc chuyển khoản ngân hàng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+</head>
+<body class="" data-page="checkout">
+  <div class="topbar">
+    <div class="container inner">
+      <div class="info-strip">
+        <span class="pill">Giao hàng toàn quốc 2H - 48H</span>
+        <span class="pill">Sửa chữa minh bạch - báo giá trước</span>
+        <span class="pill">Tiền mặt / chuyển khoản / QR</span>
+      </div>
+      <div class="hotline">Hotline: 0396 351 501 • Fix and Buy Smartphone</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">FB</span>
+        <span>
+          Fix and Buy Smartphone
+          <small>Bán máy đẹp • Linh kiện chuẩn • Giao hàng toàn quốc</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/" data-nav="home">Trang chủ</a>
+        <a href="/catalog.html" data-nav="catalog">Điện thoại & linh kiện</a>
+        <a href="/booking.html" data-nav="booking">Đặt lịch sửa</a>
+        <a href="/tracking.html" data-nav="tracking">Tra cứu đơn / phiếu sửa</a>
+        <a href="/admin-login.html" data-nav="admin">Admin</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="/cart.html" title="Giỏ hàng"><span>Giỏ hàng</span><span class="badge-count" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">Thanh toán</span>
+        <h2>Xác nhận thông tin giao hàng và thanh toán</h2>
+      </div>
+    </div>
+
+    <div class="checkout-layout">
+      <form class="checkout-box" id="checkoutForm">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">Địa chỉ giao hàng</span>
+            <h2>Điền thông tin người nhận</h2>
+          </div>
+        </div>
+
+        <div class="checkout-grid">
+          <input class="input" name="fullName" placeholder="Họ và tên người nhận" required />
+          <input class="input" name="phone" placeholder="Số điện thoại" required />
+          <input class="input full" name="email" type="email" placeholder="Email nhận thông báo" required />
+          <input class="input" name="city" placeholder="Tỉnh / Thành phố" required />
+          <input class="input" name="district" placeholder="Quận / Huyện" required />
+          <input class="input" name="ward" placeholder="Phường / Xã" required />
+          <textarea class="textarea full" name="addressLine" placeholder="Số nhà, tên đường, tòa nhà, ghi chú vị trí..." required></textarea>
+          <textarea class="textarea full" name="note" placeholder="Ghi chú cho shipper / kỹ thuật viên (nếu có)"></textarea>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="section-head">
+          <div>
+            <span class="section-tag">Thanh toán</span>
+            <h2>Chọn phương thức thanh toán</h2>
+          </div>
+        </div>
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="cod" checked />
+            <span>Thanh toán khi nhận hàng</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="bank_transfer" />
+            <span>Chuyển khoản ngân hàng</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="momo" />
+            <span>Ví MoMo</span>
+          </label>
+        </div>
+
+        <div class="payment-info-box" id="paymentMethodInfo">
+          <div class="payment-info-grid">
+            <div>
+              <span class="section-tag">Thanh toán an toàn</span>
+              <h3>Thông tin thanh toán sẽ hiển thị theo lựa chọn của bạn</h3>
+              <p class="muted">Khi chọn chuyển khoản ngân hàng, hệ thống sẽ hiển thị tên tài khoản, số tài khoản, nội dung chuyển khoản và mã QR để đối soát đơn hàng.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+        <button class="btn btn-primary w-full" type="submit">Đặt hàng ngay</button>
+      </form>
+
+      <aside class="summary-box">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">Đơn của bạn</span>
+            <h2>Tóm tắt giỏ hàng</h2>
+          </div>
+        </div>
+        <div id="checkoutSummary"></div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fix and Buy Smartphone</strong>
+        <div class="muted mt-8">Website bán điện thoại và sửa chữa với giao diện hiện đại, hỗ trợ đặt hàng, đánh giá sao và khu quản trị riêng.</div>
+      </div>
+      <div class="muted">© 2026 Fix and Buy Smartphone • Thanh toán rõ ràng • Giao hàng toàn quốc.</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

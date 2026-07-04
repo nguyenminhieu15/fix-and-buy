@@ -1,0 +1,49 @@
+HUONG DAN CHAY DUNG THU MUC
+
+1. Giai nen file zip ra mot thu muc sach, vi du:
+   D:\phone-clean
+
+2. Sau khi giai nen, duong dan dung se la:
+   D:\phone-clean\phone-repair-pro
+
+3. Ben trong thu muc nay phai thay cac file:
+   package.json
+   server.js
+   public
+   src
+   CHAY_NGAY_WINDOWS.bat
+
+4. Cach chay de nhat:
+   Bam dup vao file CHAY_NGAY_WINDOWS.bat
+
+5. Cach chay bang PowerShell:
+   cd D:\phone-clean\phone-repair-pro
+   npm install
+   npm start
+
+6. Mo web:
+   http://localhost:3000
+
+7. Mo admin:
+   http://localhost:3000/admin.html
+
+8. Tai khoan admin:
+   Email: admin@fixbuy.vn
+   Password: 12345678
+
+LUU Y:
+- Phai cai Node.js truoc.
+- Phai bat MongoDB truoc.
+- Neu server chay dung, log se co:
+  MongoDB connected
+  Server running at http://localhost:3000
+- Neu web dung ban moi, log phai co:
+  GET /socket.io/socket.io.js
+
+TINH NANG MOI:
+- Chat realtime giua khach ngoai web va admin.
+- Nut "Chat voi cua hang" o goc duoi ben phai website.
+- Admin co tab "Chat khach hang".
+- Admin upload nhieu anh san pham.
+- Thanh toan tien mat khi nhan hang va chuyen khoan ngan hang ro rang.
+- Dashboard admin co KPI doanh thu va bieu do.

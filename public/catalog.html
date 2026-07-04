@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fix and Buy Smartphone - Danh mục smartphone & linh kiện</title>
+  <meta name="description" content="Fix and Buy Smartphone cung cấp điện thoại, phụ kiện, linh kiện và dịch vụ sửa chữa với đặt hàng nhanh và thanh toán rõ ràng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+</head>
+<body class="" data-page="catalog">
+  <div class="topbar">
+    <div class="container inner">
+      <div class="info-strip">
+        <span class="pill">Giao hàng toàn quốc 2H - 48H</span>
+        <span class="pill">Sửa chữa minh bạch - báo giá trước</span>
+        <span class="pill">Tiền mặt / chuyển khoản / QR</span>
+      </div>
+      <div class="hotline">Hotline: 0396 351 501 • Fix and Buy Smartphone</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">FB</span>
+        <span>
+          Fix and Buy Smartphone
+          <small>Bán máy đẹp • Linh kiện chuẩn • Giao hàng toàn quốc</small>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/" data-nav="home">Trang chủ</a>
+        <a href="/catalog.html" data-nav="catalog">Điện thoại & linh kiện</a>
+        <a href="/booking.html" data-nav="booking">Đặt lịch sửa</a>
+        <a href="/tracking.html" data-nav="tracking">Tra cứu đơn / phiếu sửa</a>
+        <a href="/admin-login.html" data-nav="admin">Admin</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="/cart.html" title="Giỏ hàng"><span>Giỏ hàng</span><span class="badge-count" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="section">
+  <div class="container">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Bộ lọc thông minh</span>
+          <h2>Kho điện thoại, phụ kiện và linh kiện</h2>
+          <p>Tìm nhanh theo từ khóa, loại sản phẩm, hãng, mức giá và thứ tự hiển thị.</p>
+        </div>
+      </div>
+
+      <div class="filters">
+        <input class="input" id="searchInput" placeholder="Tìm theo tên máy, SKU, hãng..." />
+        <select class="select" id="typeFilter">
+          <option value="all">Tất cả loại</option>
+          <option value="phone">Điện thoại</option>
+          <option value="accessory">Phụ kiện / linh kiện</option>
+          <option value="service">Dịch vụ sửa chữa</option>
+        </select>
+        <select class="select" id="brandFilter">
+          <option value="all">Tất cả hãng</option>
+        </select>
+        <input class="input" id="minPrice" type="number" min="0" placeholder="Giá từ" />
+        <input class="input" id="maxPrice" type="number" min="0" placeholder="Giá đến" />
+        <select class="select" id="sortFilter">
+          <option value="featured">Ưu tiên nổi bật</option>
+          <option value="price_asc">Giá tăng dần</option>
+          <option value="price_desc">Giá giảm dần</option>
+          <option value="rating">Đánh giá cao</option>
+          <option value="newest">Mới nhất</option>
+          <option value="name_asc">Tên A-Z</option>
+        </select>
+      </div>
+
+      <div class="sub-actions">
+        <div class="chips" id="quickBrandChips"></div>
+        <button class="btn btn-secondary" id="clearFiltersBtn" type="button">Xóa bộ lọc</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-head">
+        <div>
+          <span class="section-tag">Kết quả</span>
+          <h2 id="catalogTitle">Đang tải sản phẩm...</h2>
+        </div>
+      </div>
+      <div class="catalog-grid" id="catalogGrid"></div>
+      <div class="spacer"></div>
+      <div class="center">
+        <button class="btn btn-secondary hidden" id="loadMoreBtn" type="button">Tải thêm</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fix and Buy Smartphone</strong>
+        <div class="muted mt-8">Website bán điện thoại và sửa chữa với giao diện hiện đại, hỗ trợ đặt hàng, đánh giá sao và khu quản trị riêng.</div>
+      </div>
+      <div class="muted">© 2026 Fix and Buy Smartphone • Đặt hàng nhanh • Thanh toán rõ ràng • Hỗ trợ trực tuyến.</div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
